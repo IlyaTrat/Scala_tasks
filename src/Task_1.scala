@@ -1,4 +1,4 @@
-/*
+/* Write function which convert function with two arguments to partially applied function with one argument
  * def curry[A, B, C](f: (A, B) => C): A => (B => C) 
  * */
 
@@ -14,10 +14,10 @@ object Task_1 {
     //Currying function div
     def divide_a_by_b = curry(div)
     
-    //partially applies a as 2
+    //applies a as 2
     def divide_two = divide_a_by_b(2)
     
-    //partially applies b as 2
+    //applies b as 2
     def divide_by_two = divide_a_by_b(_ : Double)(2)
     
     //tests examples
